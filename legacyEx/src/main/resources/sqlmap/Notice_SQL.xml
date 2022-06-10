@@ -21,4 +21,26 @@
 		board_id=#{boardId}
 	]]>
 </select>
+<update id="update" parameterType="hashMap">
+	<![CDATA[
+		update board set
+		title=#{title},
+		category=#{category}
+		where
+		board_id = #{boardId}
+		
+	]]>
+</update>
+<select id="select_list" parameterType="hashMap" resultType="hashMap">
+	<![CDATA[
+		select
+		board_id,
+		title,
+		category,
+		insert_date
+		from
+		board
+		order by insert_date desc
+	]]>
+</select>
 </mapper>
