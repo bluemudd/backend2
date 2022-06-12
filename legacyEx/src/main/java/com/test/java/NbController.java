@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView; /*ÄÁÆ®·Ñ·¯ÀÇ Ã³¸® °á°ú¸¦ º¸¿© ÁÙ ºä¿Í ºä¿¡ Àü´ŞÇÒ °ªÀ» ÀúÀåÇÏ´Â ¿ëµµ*/
+import org.springframework.web.servlet.ModelAndView; /*ì»¨íŠ¸ë¡¤ëŸ¬ì˜ ì²˜ë¦¬ ê²°ê³¼ë¥¼ ë³´ì—¬ ì¤„ ë·°ì™€ ë·°ì— ì „ë‹¬í•  ê°’ì„ ì €ì¥í•˜ëŠ” ìš©ë„*/
 
 @Controller
 public class NbController {
@@ -22,7 +22,7 @@ public class NbController {
 //}
 	@Autowired
 	BoardService boardService;
-	@RequestMapping(value="/create", method = RequestMethod.GET)
+	@GetMapping("/create")
 	public ModelAndView create() {
 		return new ModelAndView("NoticeBoard/create");
 	}
