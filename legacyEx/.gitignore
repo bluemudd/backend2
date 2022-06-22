@@ -119,6 +119,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# ignore properties file
 Notice_SQL.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java,windows
